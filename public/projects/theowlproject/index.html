@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="The OWL Project">
+<meta itemprop="description" content="What? Last year, I spent some time exploring the possibility of a news analysis ecosystem built on-chain.
+Here is the exploratory whitepaper detailing the concept:
+  Introduction There is an incomprehensible amount of information circulating on the internet. Over 4 billion humans connected to the web are constantly adding to the collection, each with their own implicit and explicit biases shaping how they perceive and propagate the information with which they interact."><meta itemprop="datePublished" content="2021-06-02T01:59:30-04:00" />
+<meta itemprop="dateModified" content="2021-06-02T01:59:30-04:00" />
+<meta itemprop="wordCount" content="3321">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="The OWL Project" />
+<meta property="og:description" content="What? Last year, I spent some time exploring the possibility of a news analysis ecosystem built on-chain.
+Here is the exploratory whitepaper detailing the concept:
+  Introduction There is an incomprehensible amount of information circulating on the internet. Over 4 billion humans connected to the web are constantly adding to the collection, each with their own implicit and explicit biases shaping how they perceive and propagate the information with which they interact." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//vyletel.eth.link/projects/theowlproject/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2021-06-02T01:59:30-04:00" />
+<meta property="article:modified_time" content="2021-06-02T01:59:30-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The OWL Project"/>
+<meta name="twitter:description" content="What? Last year, I spent some time exploring the possibility of a news analysis ecosystem built on-chain.
+Here is the exploratory whitepaper detailing the concept:
+  Introduction There is an incomprehensible amount of information circulating on the internet. Over 4 billion humans connected to the web are constantly adding to the collection, each with their own implicit and explicit biases shaping how they perceive and propagate the information with which they interact."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>The OWL Project</title>
+	<link rel="stylesheet" href="//vyletel.eth.link/css/style.min.f9770339e65ed0ba9ffccea3c0095891dfdf8677b44c14b653631bdf454c5be9.css" integrity="sha256-+XcDOeZe0Lqf/M6jwAlYkd/fhne0TBS2U2Mb30VMW+k=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="//vyletel.eth.link">Marshall Vyletel</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="//vyletel.eth.link/posts/">Writing</a>
+				<a href="//vyletel.eth.link/projects/">Projects</a>
+				<a href="//vyletel.eth.link/about/">About</a>
+				<a href="//vyletel.eth.link/donate/">Buy me a drink?</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://soundcloud.com/user-527194831-113602330" target="_blank" rel="noopener me" title="Soundcloud"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="feather" width="24" height="24" x="0px" y="0px"
+	 viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+	<path style="fill:#FF7000;" d="M72.83,218.485h18.207V103.832c-6.828,1.93-12.982,5.435-18.207,10.041
+		C72.83,113.874,72.83,218.485,72.83,218.485z M36.415,140.921v77.436l1.174,0.127h17.033v-77.682H37.589
+		C37.589,140.803,36.415,140.921,36.415,140.921z M0,179.63c0,14.102,7.338,26.328,18.207,33.147V146.52
+		C7.338,153.329,0,165.556,0,179.63z M109.245,218.485h18.207v-109.6c-5.444-3.396-11.607-5.635-18.207-6.5V218.485z
+		 M253.73,140.803h-10.242c0.519-3.168,0.847-6.382,0.847-9.705c0-32.182-25.245-58.264-56.388-58.264
+		c-16.896,0-31.954,7.775-42.287,19.955v125.695h108.07c20.747,0,37.589-17.388,37.589-38.855
+		C291.319,158.182,274.477,140.803,253.73,140.803z"/></a><a href="https://twitter.com/mbvII_" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path style="fill:#0BB5FF;" d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://www.linkedin.com/in/marshall-vyletel-10a36112a/" target="_blank" rel="noopener me" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="//vyletel.eth.link/posts/">Writing</a></li>
+			<li><a href="//vyletel.eth.link/projects/">Projects</a></li>
+			<li><a href="//vyletel.eth.link/about/">About</a></li>
+			<li><a href="//vyletel.eth.link/donate/">Buy me a drink?</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>The OWL Project</h1>
+		<div class="content">
+			<h2 id="what">What?<a href="#what" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>Last year, I spent some time exploring the possibility of a news analysis ecosystem built on-chain.</p>
+<p>Here is the exploratory whitepaper detailing the concept:</p>
+<hr>
+<hr>
+<h2 id="introduction">Introduction<a href="#introduction" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>There is an incomprehensible amount of information circulating on the internet. Over 4
+billion humans connected to the web are constantly adding to the collection, each with
+their own implicit and explicit biases shaping how they perceive and propagate the
+information with which they interact. Society is dependent on these digital mediums for
+their news, social connection and livelihood. This has slowly dissolved physical space
+as a barrier to how we can intertwine our lives. Because of this increasingly connected
+human culture developing on the internet, there are massively consequential, tectonic
+shifts in society happening under our feet every second, and with the speed at which
+information moves, a single event can catalyze millions of people across the globe to
+take real action that directly affects the well-being of billions of people.</p>
+<p>For the first time in history, you can be aware of events taking place thousands of miles
+from where you sit <em>as</em> they are happening. To make matters even more confusing, as
+you are often reading from afar and reliant on those close to what is happening to give
+you this information, you receive information only after it has been filtered through
+different perspectives and biases, so when the “facts” do get to you, they are often
+watered down and distorted. This situation is unprecedented. Natural selection and the
+evolution of human cognition have not given us the tools to make sense of this speed
+and quantity of information, so the complexity can leave us confused, emotional,
+reactive, and paralyzed.</p>
+<p>Compounding these issues, it is becoming increasingly dangerous to disagree with the
+loudest public opinions, and online conversation is quickly becoming a war zone. Large
+institutions are publicly endorsing political candidates for the first time, and dissenters
+are quickly alienated from communities that they once called home. There are real
+dangers in store for those who hold views that are outside of the currently accepted
+social ideology.</p>
+<pre><code>We don’t know who to trust, what information is true, how to read the information, or
+what to do once we have it.
+</code></pre><p>In short, we need to prepare. The floodgates are open, and there is no turning back.
+We need to investigate a new way to make sense of this situation so we are armed with
+reliable, quality information about what is happening in the world. With emerging
+technologies such as machine learning, blockchain, and an increasingly energized
+population, now is the time to explore what can be built to sift through the chaos and
+prepare ourselves, and our leaders, to take action. Imperfect, biased, and corrupted
+information will lead to imperfect, biased, and corrupted action.</p>
+<hr>
+<h2 id="quality-news">Quality News<a href="#quality-news" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>We need to know what we are working towards to know how to get there. Let’s first
+investigate what quality news looks like.</p>
+<p>When evaluating a piece of news, or any information, the most important questions to
+consider are:</p>
+<ol>
+<li><strong>Time</strong> - When was this information created?</li>
+</ol>
+<p>High quality news should be current. Different pieces of information have different
+expiration dates, but these expiration dates need to be understood to ensure that one
+is getting accurate information about the topic at hand. Certain topics see rapid shifts
+in public opinion, and with political developments especially, new facts are being
+uncovered by the minute that could change how one interprets what they read.</p>
+<ol start="2">
+<li><strong>Creator</strong> - Who is communicating it? What biases or agendas may they have that
+could influence their reporting of it? Are they a credible authority on this topic, or
+may they be out of their comfort zone?</li>
+</ol>
+<p>Every human being is subjected to implicit biases that they may or may not be aware
+of. Many parties additionally have explicit biases or agendas that they will be trying to
+enforce by communicating information. The goal is not to get rid of these biases,
+because try as we might, we are always going to be influenced by subconscious fears
+and desires that will affect how we observe the world. The goal is rather to uncover as
+many of these influences as possible, and to transparently recognize that we will be
+imperfect in doing this. High quality information makes concessions to these biases by
+outwardly recognizing what may be influencing how the information is being
+communicated.</p>
+<ol start="3">
+<li><strong>Context</strong> - How does this fit into existing knowledge on the topic being discussed?
+What social, cultural, or political framework existed while this information was being
+uncovered or communicated?</li>
+</ol>
+<p>No information exists in isolation. Every new fact that we learn about reality fits into
+particular contexts and frameworks that affect our perspective of the information being
+read. As we continue to receive information about reality, we are subconsciously
+building and repairing frameworks that allow us to move with new information and
+contextualize it with our previous ideas about what is true. Understanding what
+structures are in place that surround the information we receive is vital in getting an
+accurate picture of how new facts should be read and integrated. High quality news
+will touch on the current paradigms that the news may affect so the reader can engage
+with it on a deep level.</p>
+<ol start="4">
+<li><strong>Background</strong> - How difficult is this information to understand? How much
+prerequisite information may be necessary to understand this?</li>
+</ol>
+<p>While these questions share overlap with context, there is a subtle difference. Some
+facts may require a large amount of background information to understand, and
+understanding this background knowledge may be especially important to
+understanding the context, and therefore how this information should be read. For
+example, consider a hypothetical new discovery in neuroscience that explains new
+information discovered about the amygdala, and how that it is changing how we treat
+phobias. To understand this information holistically, one must have knowledge about
+the structure of the brain, how phobias were previously treated, and what the amygdala
+is as well as how it was previously understood. High quality news will explain what
+background knowledge is required to understanding the new information so readers
+are prepared to interpret it at the level that they can, and know the audience for which
+it was intended.</p>
+<ol start="5">
+<li><strong>Implication</strong> - Does this information suggest any action to take? What current
+structures or frameworks may need to shift in light of this information?</li>
+</ol>
+<p>Simply gathering information is not enough to create positive change in the world. It is
+crucial to understand what information is the most important and how this information
+could be used. What good is knowing what is happening on the other side of the world
+if there is nothing you can do about it, and you don’t understand how it affects your
+life? It is natural to ask how one determines <em>which</em> information is most important, and
+the answer should require community consensus, which we can explore when building
+the platform. So often we hear people preach that we “should be informed” about what
+is happening in society, but this is an empty platitude. What is truly important is
+understanding how we can use information to collectively raise well-being. High quality
+news will give us multiple clear suggestions based on different perspectives, and
+explain which suggestions are most likely to be impactful.</p>
+<p>These five pillars are the foundation on which we should be building communication
+channels for new information. We need to know who is communicating new
+information to us, when it was discovered, why the information is important, how we</p>
+<p>might read it, and what we should do about it. Without answers to the questions
+suggested here, information quickly becomes noise that leads to confusion and chaos.</p>
+<hr>
+<h2 id="closer-look">Closer Look<a href="#closer-look" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>Let’s take a magnifying glass to a piece of information and see how these pillars apply
+in the real world. To see how consequential and wide-reaching these issues are, let’s
+see if it applies in scientific literature that has rigorous information gathering
+techniques, and verify that even these methods can be deeply flawed. We have already
+seen instances like this with the anti-vaccination movement, which was founded on
+one single paper written decades ago with flawed methodology, but we can see this
+even with information that is more commonly accepted, and less controversial. Let us
+use an idea in statistical analysis to see how powerful good and bad information can
+be.</p>
+<p>There is an idea in statistics known as Bayes’s Theorem which describes the
+probability of an event given prior knowledge about conditions that may influence that
+event. To see an example of the importance of Bayes’s Theorem and how it can affect
+how people interpret the news, let’s use a canonical example that elucidates the power
+of this simple idea.</p>
+<p>Suppose there is a disease called Pine Fever that afflicts roughly 1 in every 100,
+people. Let us also suppose that there exists a test for Pine Fever that gives a positive
+result for someone with the disease 99% of the time, meaning if you do in fact have
+Pine Fever, this test will return a correct positive result 99% of the time. If you do not
+have the disease, the test will return a correct negative result 99.5% of the time. Let us
+now say that you are tested for the disease, and the test returns a positive result.
+Should you be worried?</p>
+<p>Initially, one might answer “Absolutely. This test is correct 99% of the time. I tested
+positive so there is a 99% chance that I have it.” Using a Bayesian interpretation,
+however, we see that the probability you are afflicted with Pine Fever is 0.002 even
+though you tested positive. Why is this? When factoring in the fact that only 1 in every
+100,000 people actually get the disease, we see that even though you tested positive,
+it is still extremely unlikely that you have developed the condition.</p>
+<p>This simple idea shows how misleading statistics can be. Is the Bayesian interpretation
+correct? Maybe. Is the probability you are affected 99% or is it 0.2%? Both ways of
+viewing the problem may be valid, but it is not clear which is correct. If a news article
+was written about this test, and the author wrote that this test is 99% accurate, and
+that it has extremely high predictive power, this would lead anyone who tests positive
+to be panicked, confused, and unnecessarily terrified that they have a disease which
+they may not.</p>
+<p>Additionally, to increase the confusion, what if it were found that consuming sugar
+triples your risk for Pine Fever, and you realize that you intake a large amount of sugar
+on a daily basis. Maybe you haven’t tested positive, but still, this may worry you.
+Should you be really be worried?</p>
+<p>Still, the answer is no. Tripling the risk for Pine Fever means that your odds of getting
+the disease go from 0.001% (1 in 100,000) to 0.003% (3 in 100,000). Again, if this
+absolute risk is not mentioned in the article that you read, you may be unnecessarily
+fearful, and this may cause you to take drastic action when you don’t need to.</p>
+<p>Good information about Pine Fever would describe all of these factors, and ensure that
+a holistic picture is painted about the condition so that those reading know how to
+prepare and respond to developing news. A proper source of information would explain</p>
+<p>when this information was developed, to show that it is current. The source would also
+acknowledge the writer’s potential bias or shortcomings in ability to write about this
+type of information. Should someone who historically covers political developments be
+writing about scientific discoveries? The source should also explain the context. Is Pine
+Fever a new discovery in medicine? Are the statistics trustworthy, or is it too early to
+trust these numbers completely? An ideal source should also explain that it is
+important to have a basic understanding of statistics to be able to accurately read this
+information, or you may run the risk of being confused by the numbers described.
+Lastly, the source should explain how this impacts you. Maybe Pine Fever only affects
+those in the mountainous regions of Switzerland, and as a reader in rural Ohio, this
+shouldn’t bother you. Or maybe you are an immunologist in New York City, and you
+want to know how you can help the effort to understand this disease. The source
+should point you in the right direction to make a real impact.</p>
+<p>Zooming back out, we can see how an article with the headline “New Test for
+Potentially Fatal ‘Pine Fever’ is 99% Accurate, Sugar Triples Risk” could cause
+confusion, panic, and anxiety where it is absolutely unnecessary. Examples such as
+this one be found every day when reading the news.</p>
+<hr>
+<h2 id="attempts">Attempts<a href="#attempts" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>There have been attempts to combat these issues from many different angles.
+Companies have tried to build fact-checking methods, products to ensure productive
+public conversation, and there have even been attempts to create decentralized news
+networks. With the social and political climate we’re seeing in the United States,
+however, clearly these solutions are not solving these issues holistically.</p>
+<p>Fact-checking platforms are helpful, but who gets to determine what is a fact and what
+isn’t while a situation is still unfolding? Cigarettes were once thought to be healthy. If
+those warning about the dangers of cigarettes were to be de-platformed because of
+their message, would we know what we do about lung cancer and smoking? Every
+single day, new information is discovered that challenges what we thought was true
+about reality. Fact-checking institutions are inherently flawed for this reason. What may
+seem incontrovertibly true today may be completely wrong tomorrow when we learn
+more.</p>
+<p>Online policing on social media networks is another attempt to make public
+conversation more productive, but we have seen instances where comments and
+accounts have been deleted without explanation, and this only adds fuel to the fire that
+already rages on the internet. There are virtues here, as people do make malicious
+accounts on the internet simply to stoke the fire, but the line becomes hazy, and giving
+all of the power to massive institutions can be lethal.</p>
+<p>Even seemingly neutral platforms like Wikipedia that are built by many people are
+limited in their capacity to update with current information, and these platforms are still
+not accepted as solid sources of information. Platforms of this type are more reliable
+than historically biased organizations with centralized power, but they have been the
+same for decades, and most are not using the powerful technology at our fingertips
+that can help make sense of complicated information.</p>
+<hr>
+<h2 id="the-owl-project">The Owl Project<a href="#the-owl-project" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>We need a solution that analyzes news circulating about current events, reveals the
+potential pieces of misleading information, explains how the information was gathered,
+describes the myriad of ways that it could be read, and provides actionable</p>
+<p>suggestions that can lead to real, positive development. It should compile news about
+the same topics from as many different sources as possible, and emphasize what
+information is the most accurate and useful.</p>
+<p>The major tenets of this solution will be:</p>
+<ul>
+<li>Transparency</li>
+<li>Decentralization</li>
+<li>Incentives</li>
+<li>Anonymity</li>
+<li>Diversity of Thought</li>
+</ul>
+<p>We are seeking to compile information from all major news networks, social media,
+scientific journals, and independent writers to ensure that when diving into a topic, as
+many different voices are represented, even if they may eventually be determined to be
+an inaccurate representation of reality. Accompanying each piece of information will be
+a comprehensive analysis that answers all of the questions covered in the “Quality
+News” section, as well as flags sprinkled throughout the media that highlight potentially
+important things to consider while reading the news.</p>
+<p>However, it is not enough to put together a team to build this and analyze the
+information alone, because then the analytical methods will be subjected to the
+builders’ own implicit biases, and that would be a failure to do what we set out to
+accomplish. This is why much of this solution will be built <strong><em>by the people using the
+site.</em></strong> Everyone will be able to add their own analyses to the compiled information,
+ensuring that as many different viewpoints are captured as possible. Mathematicians
+should be empowered to flag a misleading use of statistics, linguists should be
+empowered to flag harmfully manipulative language, and those close to an event
+unfolding should be empowered to highlight a misrepresentation of reality. As the user-</p>
+<p>created analysis builds on a piece of information, content will be weighed to ensure
+that the most important information, largely decided by the users, will rise to the top.</p>
+<p>To ensure our community will help us build this solution, a major component of The
+Owl Project will be <strong>incentives</strong> that reward those who seek to understand every
+perspective and who add valuable information to the conversation. We are seeking to
+understand how to empower those who uplift accurate and powerful information.</p>
+<p>In addition to the community-run portion of the solution, we will also develop new,
+rigorous, and transparent methods to analyze information ourselves to add to the
+conversation. There will be a way to quantifiably describe which information is the most
+accurate that will take into account public opinion, use machine learning analysis, and
+other comprehensive statistical tools. Of course, all of these methods to weigh and
+process information will be completely transparent and publicly available so anyone will
+be able to point out the flaws in our methodology to ensure positive growth.</p>
+<p>Lastly, the solution will be built so that groupthink will not dominate the conversation.
+Every perspective to view the issues at hand will be available, and the users of the site
+will be able to see all of the ways that it is possible to approach an idea. While some
+information may be determined to be the best given what we currently know, we know
+that new facts often change what we thought was true, so no idea will be completely
+discounted. We are giving the people the sharpest tools to cut apart information and
+determine what they think, but at the end of the day, it will be the responsibility of the
+individual to create their own judgements.</p>
+<p>The Owl Project’s answer to the situation we are facing is a publicly built news analysis
+platform that is built <em>for</em> the internet using the powerful tools at our disposal, such as
+machine learning, blockchain, and rigorous mathematical analysis. It will be completely
+<strong>transparent</strong> , <strong>open-source</strong> , and <strong>decentralized</strong> so the power is truly in the hands of
+the people using the site. It will provide holistic analysis of complex news topics, and</p>
+<p>no opinions will be cast away. Even the most inflammatory opinions may be expressed,
+but they will require public support to filter to the top, and not all information will be
+weighted equally. The platform will reward those who help us curate the best
+information, and all of our methods will be publicly available so our community can
+help us build the site.</p>
+<p>At its core, The Owl Project is an experiment to test how we can create a new
+information economy that rewards those who add accurate information to current news
+topics so everyone can understand what is happening in the world that they live in.</p>
+<hr>
+<h2 id="next-steps">Next Steps<a href="#next-steps" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>These tectonic shifts are happening fast, but we still have time to build this new
+channel of information. The Owl Project needs <strong>funding</strong> to build this experiment, a
+<strong>team</strong> to build it, and an energized public <strong>conversation</strong> about the project to gather
+users that can develop this project for mainstream use.</p>
+<p>We need these things <strong>as soon as possible</strong>. Even if our current period of global
+instability passes, it is inevitable that the future will bring novel challenges that we will
+need strong information to handle. In short, as we become more connected across the
+globe, it will only become more important to have accurate information to ensure that
+these delicate next steps are taken in the right direction, for the right reasons.</p>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2021 <a href="//vyletel.eth.link">Marshall Vyletel</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			how do the bottoms of your feet feel?
+		</p>
+	</footer>
+
+
+
+	<script src="//vyletel.eth.link/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>
