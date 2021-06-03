@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 03 Jun 2021 11:40:49 -0400</lastBuildDate><atom:link href="/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Jun 2021 11:47:44 -0400</lastBuildDate><atom:link href="/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trial2</title>
+      <link>/posts/trial2/</link>
+      <pubDate>Thu, 03 Jun 2021 11:47:44 -0400</pubDate>
+      
+      <guid>/posts/trial2/</guid>
+      <description>one more time to be extra sure.</description>
+    </item>
+    
     <item>
       <title>Trial</title>
       <link>/posts/trial/</link>
